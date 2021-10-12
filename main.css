@@ -9,6 +9,7 @@
 .home {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .menuPannel {
   margin: 0px 60px;
@@ -98,7 +99,6 @@ h1 {
   display: flex;
   margin-top: 100px;
   margin-left: 50px;
-  justify-content: space-between;
 }
 .navbar {
   display: none;
@@ -146,6 +146,9 @@ h1 {
   }
 }
 @media only screen and (max-width: 500px) {
+  body {
+    margin: 20px 0;
+  }
   .menuPannel {
     display: none;
   }
@@ -155,7 +158,7 @@ h1 {
   .home {
     margin: 0;
     display: inline-block;
-    margin: 10px 10%;
+    margin: 0 20px;
   }
   .navbar {
     display: flex;
@@ -178,10 +181,11 @@ h1 {
     font-size: 2rem;
   }
   .lower {
+    justify-content: center;
     margin: 0;
     display: grid;
     align-items: center;
-    grid-gap: 10px 0px;
+    grid-gap: 5px 0px;
     grid-template-columns: auto auto;
     margin-top: 100px;
   }
